@@ -1,0 +1,437 @@
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+/* GENERAL RULE OF THUMB: 
+    A media query should cover a range of 200px - 300px
+*/
+/* rem and em DO NOT DEPEND on HTML font-size in @media queries;
+    Instead, 1rem = 1em = 16px;
+    (Max Width / 16px = (x)em)
+    Use 1em instead of 1rem;
+*/
+/* =============================================================== */
+/* --------------------------------------- */
+/* BELOW 1344px (SMALLER COMPUTER SCREENS) */
+/* --------------------------------------- */
+/* =============================================================== */
+@media (max-width: 84em) {
+  html {
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+  /* ------------ */
+  /* SECTION HERO */
+  /* ------------ */
+  .hero--last-name {
+    font-size: 9.6rem;
+    margin-bottom: -1.4rem;
+    margin-left: -1rem;
+  }
+
+  .hero--developing {
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+    text-align: end;
+  }
+
+  .hero--tag {
+    font-size: 2rem;
+  }
+}
+/* =============================================================== */
+/* --------------------------------------- */
+/* BELOW 1200px (LANDSCAPE TABLET SCREENS) */
+/* --------------------------------------- */
+/* =============================================================== */
+@media (max-width: 75em) {
+  /* ------------------- */
+  /* SECTION CORE VALUES */
+  /* ------------------- */
+  .core-values--flex {
+    max-width: 80rem;
+    flex-direction: column;
+  }
+  /* ----------------- */
+  /* SECTION PORTFOLIO */
+  /* ----------------- */
+  .portfolio--image-box {
+    width: 80rem;
+    height: 50rem;
+  }
+
+  .portfolio--card-box {
+    max-width: 50rem;
+  }
+  /* ------------- */
+  /* SECTION ABOUT */
+  /* ------------- */
+  .about--flex {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about--box {
+    max-width: 80rem;
+  }
+}
+/* =============================================================== */
+/* --------------------------------------- */
+/* BELOW 1024px (LANDSCAPE TABLET SCREENS) */
+/* --------------------------------------- */
+/* =============================================================== */
+@media (max-width: 64em) {
+  /* ------------ */
+  /* SECTION HERO */
+  /* ------------ */
+  .hero--banner-sub-heading {
+    color: #555;
+    font-size: 2.4rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+  }
+
+  .hero--tag {
+    font-size: 1.8rem;
+  }
+}
+/* =============================================================== */
+/* ---------------------------- */
+/* BELOW 944px (TABLET SCREENS) */
+/* ---------------------------- */
+/* =============================================================== */
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+  /* ---------- */
+  /* NAVIGATION */
+  /* ---------- */
+  .social--nav-btn {
+    font-size: 2.4rem;
+  }
+  /* -------------- */
+  /* CARD COMPONENT */
+  /* -------------- */
+  .card--card-text {
+    font-size: 1.8rem;
+  }
+  /* ------------ */
+  /* SECTION HERO */
+  /* ------------ */
+  .hero--nav {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 6.4rem;
+  }
+
+  .hero--h1-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2rem;
+  }
+
+  .hero--first-name {
+    font-size: 2.4rem;
+  }
+
+  .hero--banner-sub-heading {
+    font-size: 2.4rem;
+  }
+  /* ------------- */
+  /* SECTION ABOUT */
+  /* ------------- */
+  .about--card-text {
+    font-size: 2.4rem;
+  }
+}
+/* =============================================================== */
+/* ---------------------------------- */
+/* BELOW 752px (SMALL TABLET SCREENS) */
+/* ---------------------------------- */
+/* =============================================================== */
+@media (max-width: 47em) {
+  html {
+    /* 7px / 16px = 0.4375 = 43.75% */
+    font-size: 43.75%;
+  }
+  /* ---------- */
+  /* NAVIGATION */
+  /* ---------- */
+  .social--nav-btn {
+    font-size: 2.4rem;
+  }
+  /* -------------- */
+  /* CARD COMPONENT */
+  /* -------------- */
+  .card--header {
+    display: inline-block;
+    font-size: 3.6rem;
+  }
+
+  .card--tag {
+    padding: 0 1.2rem;
+    font-size: 1.8rem;
+  }
+
+  .card--tag-first {
+    padding: 0 1.2rem 0 0;
+    border-right: 2.5px solid black;
+  }
+  /* ------------ */
+  /* SECTION HERO */
+  /* ------------ */
+  .hero--grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 1.2rem 9.6rem;
+  }
+
+  .hero--logo-box {
+    grid-row: 1;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .hero--tag {
+    font-size: 2.4rem;
+  }
+
+  .hero--last-name {
+    font-size: 9.8rem;
+    letter-spacing: 1.05rem;
+    margin-bottom: -1.4rem;
+    margin-left: -1.2rem;
+  }
+
+  .hero--developing:after {
+    content: "";
+  }
+
+  .hero--banner-sub-heading {
+    padding-top: 2.4rem;
+  }
+  /* ------------------- */
+  /* SECTION CORE VALUES */
+  /* ------------------- */
+  .core-values--flex {
+    margin: 0 auto;
+    max-width: 51.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.8rem;
+  }
+
+  .core-value--card-box {
+    width: 51.2rem;
+    transition: all 0.35s;
+  }
+
+  .portfolio--image-box {
+    width: 72rem;
+    height: 48rem;
+  }
+
+  .card--box--portfolio {
+    max-width: 32rem;
+  }
+  /* ----------------- */
+  /* SECTION PORTFOLIO */
+  /* ----------------- */
+  .portfolio--nav-tag {
+    color: #555;
+    font-size: 2.4rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .portfolio--nav-btn-left span {
+    font-size: 1.2rem;
+  }
+
+  .portfolio--nav-btn-left:after {
+    content: "This way";
+  }
+
+  .portfolio--nav-btn-right span {
+    font-size: 1.2rem;
+  }
+
+  .portfolio--nav-btn-right:after {
+    content: "That way";
+  }
+  /* ------------- */
+  /* SECTION ABOUT */
+  /* ------------- */
+  .about--flex {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about--box {
+    max-width: 64rem;
+  }
+
+  .about--image-box {
+    max-width: 64rem;
+  }
+
+  .about--header {
+    display: inline-block;
+    font-size: 3.2rem;
+    margin-bottom: -0.3rem;
+  }
+
+  .about--tag {
+    padding: 0 2.4rem;
+  }
+
+  .about--tag-first {
+    margin: 2.4rem 0;
+    padding: 0 2.4rem 0 0;
+    border-right: 2.5px solid black;
+  }
+
+  .about--nav-btn {
+    font-size: 2.4rem;
+    letter-spacing: 0.32rem;
+  }
+}
+/* =============================================================== */
+/* --------------------------- */
+/* BELOW 512px (PHONE SCREENS) */
+/* --------------------------- */
+/* =============================================================== */
+@media (max-width: 32em) {
+  html {
+    /* 6px / 16px = 0.375 = 37.5% */
+    font-size: 37.5%;
+  }
+  /* ---------- */
+  /* NAVIGATION */
+  /* ---------- */
+  .social--tag-list {
+    grid-column: 2;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3.2rem 0 1.6rem 0;
+  }
+
+  .social--tag-mid {
+    padding: 0 1.2rem;
+  }
+
+  .social--nav-btn {
+    font-size: 2.6rem;
+    letter-spacing: 0.05rem;
+  }
+  /* -------------- */
+  /* CARD COMPONENT */
+  /* -------------- */
+  .card--tag {
+    font-size: 2.4rem;
+  }
+
+  .card--card-text {
+    font-size: 2.4rem;
+  }
+  /* --------------- */
+  /* SECTION BANNERS */
+  /* --------------- */
+  .section--banner {
+    padding: 0 6.4rem;
+  }
+
+  .banner-sub-heading {
+    padding: 0 6.4rem;
+  }
+  /* ------------ */
+  /* SECTION HERO */
+  /* ------------ */
+  .section--hero-banner {
+    padding: 0 4.8rem;
+  }
+
+  .hero--first-name {
+    font-size: 3.6rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .hero--grid {
+    padding: 2.4rem 4.8rem;
+  }
+
+  .hero--tag {
+    padding: 0 1.2rem;
+    font-size: 2.4rem;
+  }
+
+  .hero--banner-sub-heading {
+    font-size: 3.6rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .core-values--flex {
+    max-width: 48rem;
+  }
+
+  /* ----------------- */
+  /* SECTION PORTFOLIO */
+  /* ----------------- */
+  .portfolio--image-box {
+    width: 51.2rem;
+    height: 51.2rem;
+  }
+
+  .portfolio--card-box {
+    max-width: 48rem;
+  }
+
+  .portfolio--card-button {
+    font-size: 3rem;
+  }
+
+  .portfolio--nav-container {
+    margin: 9.6rem 0;
+  }
+
+  .portfolio--nav-tag {
+    padding: 0 6.4rem;
+    font-size: 2.4rem;
+    color: #555;
+    letter-spacing: 0.32rem;
+    text-transform: lowercase;
+  }
+
+  .portfolio--nav-tag-first {
+    padding: 0 4.8rem 0 0;
+    border-right: 2.5px solid black;
+  }
+
+  .portfolio--nav-tag-last {
+    text-align: end;
+    padding: 0 0 0 4.8rem;
+    border-left: 2.5px solid black;
+  }
+  /* ------------- */
+  /* SECTION ABOUT */
+  /* ------------- */
+  .about--box {
+    max-width: 48rem;
+  }
+
+  .about--image-box {
+    max-width: 48rem;
+  }
+}

@@ -1,0 +1,681 @@
+/* ------------- */
+/* GLOBAL RESETS */
+/* ------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  color: black;
+}
+
+html {
+  /* 1rem = 10px */
+  /* Percentage of User's Broswer Font Size Setting */
+  /* 10px / 16px = 0.625 = 62.5% */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(245, 245, 245, 0.87),
+      rgba(255, 255, 255, 0.35)
+    ),
+    url(/grey-background.jpg);
+}
+
+strong {
+  font-weight: 500;
+}
+/* ------------------------------------------------------------------------ */
+/* ------------------- */
+/* NEW SECTION BANNERS */
+/* ------------------- */
+.section--banner {
+  margin: 0 auto;
+  padding: 0 9.6rem;
+  border-bottom: 2.5px solid black;
+}
+
+.section--banner-right {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.05),
+    #adadad9f
+  );
+}
+
+.section--banner-left {
+  background: linear-gradient(
+    to left bottom,
+    rgba(255, 255, 255, 0.05),
+    #adadad9f
+  );
+}
+
+.banner--header {
+  color: #262626;
+  font-size: 6.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: -1rem;
+}
+
+.banner-sub-heading {
+  color: #262626;
+  font-size: 2.4rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  padding: 0 9.6rem;
+  margin-top: 1.8rem;
+}
+.section--sub-banner {
+  margin: 12.8rem auto;
+}
+
+.banner-sub-heading-right {
+  text-align: end;
+}
+
+.banner-header-right {
+  text-align: end;
+}
+
+.section--sub-banner-end {
+  margin: 24rem auto 2.4rem auto;
+}
+
+.section--banner-end {
+  padding: 0 9.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0);
+  box-shadow: 0 1.6rem 1.8rem -1.6rem rgba(0, 0, 0, 0.25);
+}
+
+.banner-sub-heading-end {
+  font-size: 1.2rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+
+.banner-sub-heading-right-end {
+  text-align: end;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.banner--header-end {
+  color: #262626;
+  font-size: 6.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: -0.4rem;
+}
+
+.banner-header-right-end {
+  font-size: 3rem;
+  text-align: end;
+}
+/* ------------------------------------------------------------------------ */
+/* ----------------- */
+/* SOCIAL NAVIGATION */
+/* ----------------- */
+.social--tag-list {
+  grid-column: 2;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 3.2rem 0 0 0;
+}
+
+.social--tag {
+  padding: 0 1.2rem;
+}
+
+.social--tag-first {
+  padding: 0 1.2rem 0 0;
+  border-right: 2.5px solid black;
+}
+
+.social--tag-mid {
+  padding: 0 1.2rem;
+  border-left: 2.5px solid black;
+}
+
+.social--tag-last {
+  padding-right: 0;
+  border-left: 2.5px solid black;
+}
+
+.social--nav-btn {
+  display: block;
+  color: #262626;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.32rem;
+  text-transform: lowercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all ease 0.35s;
+}
+
+.social--nav-btn:hover,
+.social--nav-btn:active,
+.social--nav-btn:focus {
+  color: black;
+  text-decoration: underline;
+}
+
+/* ---------------------------------------------------------------------- */
+/* -------------------- */
+/* CARD COMPONENT STLYE */
+/* -------------------- */
+.card--card-box {
+  box-shadow: 0rem 1.6rem 12.8rem 3.2rem rgba(0, 0, 0, 0.35);
+}
+
+.card--header-box {
+  color: #262626;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), #cfcfcf);
+  padding: 1.2rem 0 0 2.4rem;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  border-bottom: 2.5px solid black;
+  box-shadow: 0 1.6rem 1.8rem -1.6rem rgba(0, 0, 0, 0.35);
+}
+
+.card--gradient {
+  background: linear-gradient(to bottom, rgb(255, 255, 255), #cfcfcf00);
+}
+
+.card--header {
+  margin-bottom: -0.45rem;
+  font-size: 3rem;
+}
+
+.card--card-body {
+  background: linear-gradient(to bottom, white, #adadad00);
+  padding: 1.2rem 2.4rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.card--tag-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 1.2rem 2.4rem;
+  background-color: white;
+}
+
+.card--tag {
+  padding: 0 1.2rem;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  text-transform: lowercase;
+}
+
+.card--tag-first {
+  padding: 0 1.2rem 0 0 !important;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  text-transform: lowercase;
+  border-right: 2.5px solid black;
+}
+
+.card--tag-last {
+  padding: 0 0 0 1.2rem !important;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  text-transform: lowercase;
+  border-left: 2.5px solid black;
+}
+
+.card--card-text {
+  padding: 1.2rem 0 1.2rem 0;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.card--card-button {
+  display: block;
+  background-color: white;
+  padding: 1.2rem 2.4rem 1.2rem 2.4rem;
+  color: #262626;
+  font-size: 1.8rem;
+  letter-spacing: 0.25rem;
+  text-align: end;
+  text-transform: lowercase;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.35s;
+}
+
+.card--card-button:hover,
+.card--card-button:active,
+.card--card-button:focus {
+  color: black;
+  background-color: #cfcfcf;
+}
+/* ------------------------------------------------------------------------ */
+/* ------------ */
+/* SECTION HERO */
+/* ------------ */
+.section--hero-banner {
+  margin: 0 auto;
+  padding: 9.6rem 9.6rem 0 9.6rem;
+  color: #262626;
+  font-size: 6.2rem;
+  font-weight: 500;
+  letter-spacing: 1.05rem;
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, white, #cfcfcf);
+  border-bottom: 2.5px solid black;
+  box-shadow: 0 1.6rem 1.8rem -1.6rem rgba(0, 0, 0, 0.35);
+}
+
+.hero--nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.hero--first-name {
+  color: #555;
+  font-size: 2.4rem;
+  letter-spacing: 0.5rem;
+  text-transform: lowercase;
+}
+
+.hero--h1-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.hero--last-name {
+  color: #262626;
+  font-size: 12.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: -2rem;
+  margin-left: -1.4rem;
+}
+
+.hero--developing span {
+  display: none;
+  text-align: end;
+  text-transform: uppercase;
+}
+
+.hero--developing:after {
+  color: #262626;
+  font-size: 2rem;
+  letter-spacing: 0.75rem;
+  content: "Developing With:";
+}
+
+.hero--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 1.2rem 9.6rem;
+}
+
+.hero--banner-sub-heading {
+  color: #555;
+  font-size: 2.4rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.hero--logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 1.2rem;
+}
+
+.hero--tag-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.hero--tag {
+  padding: 0 1.2rem;
+  font-size: 2rem;
+  color: #262626;
+  letter-spacing: 1.5px;
+  text-transform: lowercase;
+}
+
+.hero--tag-last {
+  color: rgba(85, 85, 85, 0.5);
+  border-left: 2.5px solid black;
+}
+
+.hero--tag-first {
+  padding: 0 1.2rem 0 0 !important;
+  border-right: 2.5px solid black;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ------------------- */
+/* SECTION CORE VALUES */
+/* ------------------- */
+.section--core-value {
+  margin: 9.6rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.core-values--flex {
+  max-width: 120rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.core-value--card-box {
+  transition: all 0.35s;
+}
+
+.core-value--card-box:hover {
+  box-shadow: 0.1rem 1.6rem 3.2rem rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+}
+/* ---------------------------------------------------------------------- */
+/* ----------------- */
+/* SECTION PORTFOLIO */
+/* ----------------- */
+
+.section--portfolio {
+  margin: 12.8rem 9.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio--image-box {
+  width: 120rem;
+  height: 60rem;
+  border: 3px solid black;
+  background-image: url(../img/omnifood-thumb.jpg);
+  background-size: cover;
+  position: relative;
+  transition: all 0.35s;
+}
+
+.portfolio--card-box:link,
+.portfolio--card-box:visited {
+  color: #555;
+  max-height: 40rem;
+  box-shadow: 0.1rem 1.6rem 3.2rem rgba(0, 0, 0, 0.35);
+  z-index: 3;
+  text-decoration: none;
+  position: absolute;
+}
+.portfolio--card-box:hover,
+.portfolio--card-box:active {
+  border-radius: 16px;
+}
+.portfolio-card--header {
+  margin-bottom: -0.45rem;
+  font-size: 3rem;
+}
+
+.portfolio-card--header:after {
+  content: "Omnifood";
+}
+
+.card-box--portfolio-fill {
+  background-color: white;
+}
+
+.portfolio--card-button {
+  display: block;
+  background-color: white;
+  padding: 1.2rem 2.4rem 1.2rem 2.4rem;
+  color: #262626;
+  font-size: 1.8rem;
+  letter-spacing: 0.25rem;
+  text-align: end;
+  text-transform: lowercase;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.35s;
+}
+
+.portfolio--card-button:hover,
+.portfolio--card-button:active,
+.portfolio--card-button:focus {
+  color: #fdf2e9;
+  background-color: #e67e22;
+}
+
+.portfolio--nav-container {
+  margin: 4.8rem 0;
+}
+
+.portfolio--nav-list {
+  background: none !important;
+}
+
+.portfolio--nav-tag {
+  padding: 0 9.6rem;
+  font-size: 1.8rem;
+  color: #555;
+  letter-spacing: 0.25rem;
+  text-transform: lowercase;
+}
+
+.portfolio--nav-tag-first {
+  padding: 0 4.8rem 0 0;
+  border-right: 2.5px solid black;
+}
+
+.portfolio--nav-tag-last {
+  text-align: end;
+  padding: 0 0 0 4.8rem;
+  border-left: 2.5px solid black;
+}
+
+.portfolio--nav-btn-left {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.portfolio--nav-btn-left:hover,
+.portfolio--nav-btn-left:active,
+.portfolio--nav-btn-left:focus {
+  text-decoration: underline;
+  color: black;
+}
+
+.portfolio--nav-btn-right {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.portfolio--nav-btn-right:hover,
+.portfolio--nav-btn-right:active,
+.portfolio--nav-btn-right:focus {
+  text-decoration: underline;
+  color: black;
+}
+
+.portfolio--nav-btn-left span {
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  text-transform: lowercase;
+}
+
+.portfolio--nav-btn-left:after {
+  color: #262626;
+  content: "\2190\ This way";
+}
+
+.portfolio--nav-btn-right span {
+  letter-spacing: 0.05rem;
+  text-transform: lowercase;
+}
+
+.portfolio--nav-btn-right:after {
+  color: #262626;
+  content: "That way \2192";
+}
+
+/* ---------------------------------------------------------------------- */
+/* ------------- */
+/* SECTION ABOUT */
+/* ------------- */
+.section--about {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.about--flex {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 120rem;
+}
+
+.about--box {
+  max-width: 40rem;
+}
+
+.about--image-box {
+  display: block;
+  filter: grayscale(1);
+  width: 50%;
+  object-fit: cover;
+}
+
+.about--header-box {
+  color: #262626;
+  padding: 1.2rem 0 0 2.4rem;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), #cfcfcf);
+  border-bottom: 2.5px solid black;
+  box-shadow: 0 1.6rem 1.8rem -1.6rem rgba(0, 0, 0, 0.4);
+}
+
+.about--header {
+  margin-bottom: -0.45rem;
+  font-size: 3rem;
+}
+
+.about--card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 2.4rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.about--card-text {
+  padding: 1rem 0 1.2rem 0;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.about--tag-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 1.2rem 2.4rem;
+  background-color: white;
+}
+
+.about--tag {
+  padding: 0 1.2rem;
+}
+
+.about--tag-first {
+  padding: 0 1.2rem 0 0;
+  border-right: 2.5px solid black;
+}
+
+.about--tag-last {
+  padding-right: 0;
+  border-left: 2.5px solid black;
+}
+
+.about--nav-btn {
+  display: block;
+  color: #555;
+  font-size: 1.6rem;
+  letter-spacing: 0.25rem;
+  text-transform: lowercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.about--nav-btn:hover,
+.about--nav-btn:active,
+.about--nav-btn:focus {
+  color: black;
+  text-decoration: underline;
+}
+
+.about--quote {
+  padding: 1.2rem 0;
+  color: #262626;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.25rem;
+}
+
+.about--card-text {
+  font-size: 1.6rem;
+}
+
+.about--card-button-box {
+  font-size: 3rem;
+  letter-spacing: 0.25rem;
+  text-align: end;
+  text-transform: lowercase;
+}
+
+.about--card-button {
+  display: inline-block;
+  padding: 1.2rem 2.4rem 1.2rem 2.4rem;
+  color: #262626;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s;
+}
+
+.about--card-button:hover,
+.about--card-button:active,
+.about--card-button:focus {
+  transform: scale(1.5);
+  color: black;
+}

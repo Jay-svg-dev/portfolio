@@ -1,0 +1,156 @@
+/* ----------------- */
+/* PROFESSIONAL CARD */
+/* ----------------- */
+#professional:hover > .card--header-box {
+  display: block;
+  color: #ff6969;
+  background: linear-gradient(to bottom, #222831, #222831);
+  border-bottom: 2.5px solid #ff6969;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+#professional:hover > .card--card-body {
+  background: linear-gradient(to bottom, #393e46, #393e46);
+  border-top: 1px solid #ff696971;
+  color: #eeeeee;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+#professional:hover > .card--tag-list {
+  background-color: #393e46;
+  color: #eeeeee;
+}
+#professional:hover > .card--tag {
+  color: #eeeeee;
+}
+
+#professional:hover .card--tag-first {
+  border-right: 2.5px solid #ff6969;
+}
+
+#professional:hover .card--tag-last {
+  border-left: 2.5px solid #ff6969;
+}
+/* ----------------- */
+/* PROFESSIONAL CARD */
+/* ----------------- */
+#reliable:hover > .card--header-box {
+  display: block;
+  color: #ffd369;
+  background: linear-gradient(to bottom, #222831, #222831);
+  border-bottom: 2.5px solid #ffd369;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+#reliable:hover > .card--card-body {
+  background: linear-gradient(to bottom, #393e46, #393e46);
+  border-top: 1px solid #ffd36971;
+  color: #eeeeee;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+#reliable:hover > .card--tag-list {
+  background-color: #393e46;
+  color: #eeeeee;
+}
+
+#reliable:hover > .card--tag {
+  color: #eeeeee;
+}
+
+#reliable:hover .card--tag-first {
+  border-right: 2.5px solid #ffd369;
+}
+
+#reliable:hover .card--tag-last {
+  border-left: 2.5px solid #ffd369;
+}
+/* ----------------- */
+/* PROFESSIONAL CARD */
+/* ----------------- */
+#adaptable:hover > .card--header-box {
+  display: block;
+  color: #69ff76;
+  background: linear-gradient(to bottom, #222831, #222831);
+  border-bottom: 2.5px solid #69ff76;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+#adaptable:hover > .card--card-body {
+  background: linear-gradient(to bottom, #393e46, #393e46);
+  border-top: 1px solid #69ff7671;
+  color: #eeeeee;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+#adaptable:hover > .card--tag-list {
+  background-color: #393e46;
+  color: #eeeeee;
+}
+#adaptable:hover > .card--tag {
+  color: #eeeeee;
+}
+
+#adaptable:hover .card--tag-first {
+  border-right: 2.5px solid #69ff76;
+}
+
+#adaptable:hover .card--tag-last {
+  border-left: 2.5px solid #69ff76;
+}
+
+/* ------------ */
+/* PROJECT CARD */
+/* ------------ */
+#omnifood:hover {
+  cursor: pointer;
+}
+
+#omnifood:hover + .portfolio--image-box {
+  background-image: url(../img/omnifood-thumb-color.jpg);
+}
+
+#omnifood:hover > .card--header-box {
+  display: block;
+  color: #2e1907;
+  background: linear-gradient(to bottom, #e67e22, #e67e22);
+  border-bottom: 2.5px solid #2e1907;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+#omnifood:hover .portfolio-card--header:after {
+  text-transform: lowercase;
+  content: "start eating well";
+}
+
+#omnifood:hover > .card--card-body {
+  background: linear-gradient(to bottom, #fae5d3, #fae5d3);
+  border-top: 1px solid #2e190771;
+  color: #5c320e;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+#omnifood:hover > .card--tag-list {
+  background-color: #fae5d3;
+  color: #5c320e;
+}
+
+#omnifood:hover > .card--tag {
+  color: #5c320e;
+}
+
+#omnifood:hover .card--tag-first {
+  border-right: 2.5px solid #2e1907;
+}
+
+#omnifood:hover .card--tag-last {
+  border-left: 2.5px solid #2e1907;
+}
