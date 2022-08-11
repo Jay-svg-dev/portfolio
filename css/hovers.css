@@ -113,7 +113,7 @@
 }
 
 #omnifood:hover + .portfolio--image-box {
-  background-image: url(../img/omnifood-thumb-color.jpg);
+  filter: grayscale(0);
 }
 
 #omnifood:hover > .card--header-box {
