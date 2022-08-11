@@ -417,8 +417,9 @@ strong {
   width: 120rem;
   height: 60rem;
   border: 3px solid black;
-  background-image: url(../img/omnifood-thumb.jpg);
+  background-image: url(../img/omnifood-thumb-color.jpg);
   background-size: cover;
+  filter: grayscale(1);
   position: relative;
   transition: all 0.35s;
 }
