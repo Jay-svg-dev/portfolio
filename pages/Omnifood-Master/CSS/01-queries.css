@@ -1,0 +1,384 @@
+/*
+-------------------------
+--- TYPOGRAPHY SYSTEM ---
+-------------------------
+
+--------------------------------------------------
+| 1rem = 10px                                    |
+| Percentage of User's Broswer Font Size Setting |
+| 10px / 16px = 0.625 = 62.5%                    |
+--------------------------------------------------
+
+-- FONT SIZE SYSTEM (px)
+
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+-- FONT SIZE SYSTEM (rem)
+
+1 / 1.2 / 1.4 / 1.6 / 1.8 / 2 / 2.4 / 3 / 3.6 / 4.4 / 5.2 / 6.2 / 7.4 / 8.6 / 9.8
+
+
+-- FONT WEIGHTS
+
+DEFAULT / MEDIUM / SEMI-BOLD / BOLD
+-----------------------------------
+400     / 500    / 600       / 700
+
+
+-- LINE HEIGHTS (px)
+  Default / Small / Paragraph Default
+  1 / 1.05 / 1.5
+
+-- LETTER SPACING (px)
+  -0.5 / 0.75 /
+
+
+=======================================================================================
+--------------
+--- COLORS ---
+--------------
+
+Primary: #e67e22
+  Tints: #e98b38, #eb984e, #eea564, #f0b27a, #f3bf91, #f5cba7, #f8d8bd, #fae5d3, #fdf2e9
+  Shades: #cf711f, #b8651b, #a15818, #8a4c14, #733f11, #5c320e, #45260a, #2e1907, #170d03
+Greys: #999, #767676, (Lightest on fae5d3: #6f6f6f), #555, #333, #000000
+Accents: #cf421f
+
+
+=======================================================================================
+---------------
+--- SHADOWS ---
+---------------
+
+-- Light / Medium / Dark
+   0.05  / 0.075  / 0.1
+
+=======================================================================================
+---------------------
+--- BORDER-RADIUS ---
+---------------------
+
+-- Default / Medium / Large
+   8px     / 11px   / px
+
+=======================================================================================
+------------------
+--- WHITESPACE ---
+------------------
+
+-- SPACING SYSTEM (px) 
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+-- SPACING SYSTEM (rem)
+0.2 / 0.4 / 0.8 / 1 / 1.2 / 1.6 / 2.4 / 3.2 / 4.8 / 6.4 / 8 / 9.6 / 12.8
+
+
+=======================================================================================*/
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+/* GENERAL RULE OF THUMB: 
+    A media query should cover a range of 200px - 300px
+*/
+/* rem and em DO NOT DEPEND on HTML font-size in @media queries;
+    Instead, 1rem = 1em = 16px;
+    (Max Width / 16px = (x)em)
+    Use 1em instead of 1rem;
+*/
+
+/* ------------------------- */
+/* FIXING SAFARI FLEXBOX GAP */
+/* ------------------------- */
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+/* --------------------------------------- */
+/* BELOW 1344px (SMALLER COMPUTER SCREENS) */
+/* --------------------------------------- */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .primary-h1 {
+    font-size: 4.4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --------------------------------------- */
+/* BELOW 1200px (LANDSCAPE TABLET SCREENS) */
+/* --------------------------------------- */
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .secondary-h2 {
+    font-size: 3.6rem;
+  }
+  .tertiary-h3 {
+    font-size: 2.4rem;
+  }
+  .main-header {
+    padding: 0 3.2rem;
+  }
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+/* ---------------------------- */
+/* BELOW 944px (TABLET SCREENS) */
+/* ---------------------------- */
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+    padding: 0 8rem;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+  .logo img {
+    height: 2.4rem;
+  }
+  .step-number {
+    font-size: 7.4rem;
+  }
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .call-to-action {
+    /* 3/5 = 60% + 2/5 = 40% */
+    grid-template-columns: 3fr 2fr;
+  }
+  .call-to-action-form {
+    grid-template-columns: 1fr;
+  }
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+  .btn-mobile--nav {
+    display: block;
+    z-index: 3;
+  }
+  .main-nav {
+    display: flex;
+    -webkit-backdrop-filter: blur(6px);
+    /* ENABLE ON FIREFOX 
+    [about:config/ layout.css.backdrop-filter.enabled/ setTo true
+    */
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.82);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+    /* display: none; ALLOWS NO TRANSITIONS AT ALL */
+
+    /* HIDE AN ELEMENT PROPERLY  */
+
+    /* 1) HIDE THE ELEMENT VISUALLY */
+    opacity: 0;
+
+    /* 2> MAKE UNACCESSIBLE TO MOUSE AND KEYBOARD */
+    pointer-events: none;
+
+    /* 3) HIDE IT FROM SCREEN READERS */
+    visibility: hidden;
+  }
+  .nav-open .main-nav {
+    /* TURNS THE ELEMENT BACK "ON" */
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .mobile-icon[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .mobile-icon[name="menu-outline"] {
+    display: none;
+  }
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
+
+/* ---------------------------------- */
+/* BELOW 704px (SMALL TABLET SCREENS) */
+/* ---------------------------------- */
+
+@media (max-width: 44em) {
+  .grid--3-columns,
+  .grid--4-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  .secondary-h2 {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .nav-column {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+  .logo-column,
+  .address-column {
+    grid-column: span 3;
+  }
+}
+/* --------------------------- */
+/* BELOW 544px (PHONE SCREENS) */
+/* --------------------------- */
+
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-columns,
+  .grid--3-columns,
+  .grid--4-columns {
+    grid-template-columns: 1fr;
+  }
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.2rem;
+  }
+  .hero-img {
+    width: 80%;
+  }
+  .logo img {
+    height: 1.2rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+  .call-to-action {
+    grid-template-columns: 1fr;
+  }
+  .call-to-action-image-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+  .call-to-action-text-box {
+    padding: 3.2rem;
+  }
+}
